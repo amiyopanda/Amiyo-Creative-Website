@@ -252,8 +252,8 @@ export const SocialPlatforms: SocialPlatformProps[] = [
         icon: FaPhoneAlt,
         borderColor: "border-gray-500/30",
         textColor: "text-gray-300",
-        url: "tel:+919330231517",
-        value: "+91 93302 31517",
+        url: "tel:+919062933545",
+        value: "+91 90629 33545",
         target: "_self",
     },
     {
@@ -261,8 +261,8 @@ export const SocialPlatforms: SocialPlatformProps[] = [
         icon: FaWhatsapp,
         borderColor: "border-green-500/30",
         textColor: "text-green-400",
-        url: "https://wa.me/+919330231517",
-        value: "+91 93302 31517",
+        url: "https://wa.me/919062933545?text=Hello%20Amiyo%20Creative,%20I%E2%80%99d%20like%20to%20connect%20and%20discuss%20a%20requirement.%20Please%20let%20me%20know%20how%20to%20proceed.",
+        value: "+91 90629 33545",
         target: "_blank",
     },
     {
@@ -306,8 +306,8 @@ export const SocialPlatforms: SocialPlatformProps[] = [
         icon: FaTelegram,
         borderColor: "border-cyan-500/30",
         textColor: "text-cyan-500",
-        url: "https://t.me/amiyocreative",
-        value: "@amiyocreative",
+        url: "https://t.me/Amiyo_Creative",
+        value: "@Amiyo_Creative",
         target: "_blank",
     },
     {

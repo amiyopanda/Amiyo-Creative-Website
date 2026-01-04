@@ -234,15 +234,15 @@ export default async function sendEnquiryConfirmationEmail(
                                             style="display: inline-table;">
                                             <tr>
                                                 <td style="padding: 5px;">
-                                                    <a href="mailto:your.email@example.com">
+                                                    <a href="mailto:contact@amiyocreative.com">
                                                         Email</a>
                                                 </td>
                                                 <td style="padding: 5px;">
-                                                    <a href="tel:+1234567890">
+                                                    <a href="tel:+919062933545">
                                                         Phone</a>
                                                 </td>
                                                 <td style="padding: 5px;">
-                                                    <a href="https://wa.me/1234567890"> WhatsApp</a>
+                                                    <a href="https://wa.me/919062933545?text=Hello%20Amiyo%20Creative,%20I%E2%80%99d%20like%20to%20connect%20and%20discuss%20a%20requirement.%20Please%20let%20me%20know%20how%20to%20proceed."> WhatsApp</a>
                                                 </td>
                                             </tr>
                                         </table>

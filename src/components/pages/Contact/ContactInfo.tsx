@@ -57,7 +57,7 @@ const ContactInfo = () => {
                         variants={itemVariants}>
                         <FaPhone className="size-6 3xl:size-8 text-purple-400" />
                         <p className="text-gray-400 text-sm 3xl:text-xl">
-                            +91 93302 31517
+                            +91 90629 33545
                         </p>
                     </motion.div>
 
