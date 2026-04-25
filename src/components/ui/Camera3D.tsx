@@ -16,11 +16,12 @@ export default function SplineScene({ sceneUrl, height = 500 }: Props) {
         <div ref={containerRef} className="relative w-full" style={{ height }}>
             {!loaded && (
                 <div className="absolute inset-0 flex items-center justify-center text-white">
-                    Setting up the perfect shot...
+                    Every frame is intentional.
                 </div>
             )}
-            <div className="absolute bg-linear-to-r text-xs flex justify-center items-center from-purple-950 to-slate-900 w-36 h-9 bottom-5 right-5 rounded-2xl z-20">
-                Founder <span className="text-white font-bold ">: Amiyo Panda</span>
+            <div className="absolute bg-linear-to-r text-xs flex justify-center items-center gap-1 from-purple-950 to-slate-900 w-40 h-9 bottom-5 right-5 rounded-2xl z-20">
+                Founded by
+                <span className="text-white font-bold ">Amiyo Panda</span>
             </div>
             <Spline scene={sceneUrl} onLoad={() => setLoaded(true)} />
         </div>

@@ -62,7 +62,8 @@ const Hero: React.FC = () => {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            custom={0.1}>
+            custom={0.1}
+        >
             {/* Left Gradient*/}
             <motion.div
                 variants={fadeUp}
@@ -120,7 +121,8 @@ const Hero: React.FC = () => {
                     spacing={40}
                     showFade={true}
                     fadeIntensity={30}
-                    className="h-[600px] bg-transparent">
+                    className="h-[600px] bg-transparent"
+                >
                     {/* Main */}
                     <div className="flex flex-col py-10 md:py-0 3xl:py-12 md:flex-row justify-center items-center text-base text-white z-5 gap-6 md:gap-4 lg:gap-12 md:pl-16 w-full h-full">
                         {/* Text */}
@@ -130,8 +132,9 @@ const Hero: React.FC = () => {
                                 initial="hidden"
                                 animate="visible"
                                 custom={1.4}
-                                className="text-gray-400 font-semibold text-sm md:text-base 3xl:text-2xl tracking-wide bg-orange-600/20 rounded-full px-2 py-0.5">
-                                Where Innovation Meets Perfection
+                                className="text-gray-400 font-semibold text-sm md:text-base 3xl:text-2xl tracking-wide bg-orange-600/20 rounded-full px-2 py-0.5"
+                            >
+                                Full-Service Creative Production. One Studio.
                             </motion.span>
 
                             <motion.h1
@@ -139,13 +142,12 @@ const Hero: React.FC = () => {
                                 initial="hidden"
                                 animate="visible"
                                 custom={0.6}
-                                className="font-bold text-white leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl">
-                                <span className="uppercase">
-                                    Creative Visuals
-                                </span>{" "}
-                                <br />
+                                className="font-bold text-white leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl"
+                            >
+                                <span>Your Brand Deserves</span> <br />
                                 <span className="bg-linear-to-br bg-clip-text text-transparent from-purple-400 via-white">
-                                    For Every Story
+                                    Visuals That{" "}
+                                    <span className="uppercase">Perform</span>
                                 </span>
                             </motion.h1>
 
@@ -154,12 +156,12 @@ const Hero: React.FC = () => {
                                 initial="hidden"
                                 animate="visible"
                                 custom={1.6}
-                                className="text-gray-400 text-sm sm:text-base md:text-md lg:text-lg 3xl:text-3xl">
-                                Amiyo Creative delivers professional
-                                photography, video production, video editing,
-                                design, CGI, VFX, and web development — all
-                                under one roof. Every category includes complete
-                                end-to-end solutions, available 24/7.
+                                className="text-gray-400 text-sm sm:text-base md:text-md lg:text-lg 3xl:text-3xl"
+                            >
+                                Amiyo Creative is a full-service production
+                                studio — video editing, design, photography,
+                                videography, CGI, VFX, and web. One team. One
+                                brief. End-to-end execution, delivered on time.
                             </motion.p>
 
                             <motion.div
@@ -167,21 +169,24 @@ const Hero: React.FC = () => {
                                 initial="hidden"
                                 animate="visible"
                                 custom={1.8}
-                                className="flex gap-4 pt-0 lg:pt-2 w-full px-4 md:px-0">
+                                className="flex gap-4 pt-0 lg:pt-2 w-full px-4 md:px-0"
+                            >
                                 <Link
                                     href={"/contact"}
-                                    className="relative cursor-target group flex justify-center items-center text-xs sm:text-sm 3xl:text-2xl text-center outline-none cursor-none px-6 sm:px-8 py-2 sm:py-4 bg-black/80 hover:bg-linear-to-r from-purple-400 to-purple-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-purple-800 transform hover:scale-105 transition-all duration-200 shadow-[inset_0px_2px_4px_rgb(255,255,255)] hover:shadow-xl">
+                                    className="relative cursor-target group flex justify-center items-center text-xs sm:text-sm 3xl:text-2xl text-center outline-none cursor-none px-6 sm:px-8 py-2 sm:py-4 bg-black/80 hover:bg-linear-to-r from-purple-400 to-purple-500 text-white font-semibold rounded-full hover:from-purple-700 hover:to-purple-800 transform hover:scale-105 transition-all duration-200 shadow-[inset_0px_2px_4px_rgb(255,255,255)] hover:shadow-xl"
+                                >
                                     <div className="absolute -top-1 -left-1 w-2/3 h-5/6 bg-orange-500 -z-1 rounded-full blur-sm group-hover:opacity-10 transition-all duration-500 ease-out" />
                                     <div className="absolute -top-1 -right-1 w-2/3 h-5/6 bg-purple-700 -z-1 rounded-full blur-sm group-hover:opacity-10 transition-all duration-500 ease-out" />
-                                    Start Your Project
+                                    Start a Project
                                 </Link>
 
                                 <Link
                                     href={"/work"}
-                                    className="relative cursor-target flex justify-center hover:border-0 border-x border-t items-center text-xs sm:text-sm 3xl:text-2xl text-center outline-none cursor-none px-6 sm:px-8 py-2 sm:py-4 text-white font-semibold rounded-full hover:bg-white/20 transform hover:scale-105 transition-all duration-200 shadow-[inset_0px_2px_4px_rgb(255,255,255),0px_0px_20px_0px_rgba(0,0,0,0.5)] hover:shadow-xl overflow-hidden">
+                                    className="relative cursor-target flex justify-center hover:border-0 border-x border-t items-center text-xs sm:text-sm 3xl:text-2xl text-center outline-none cursor-none px-6 sm:px-8 py-2 sm:py-4 text-white font-semibold rounded-full hover:bg-white/20 transform hover:scale-105 transition-all duration-200 shadow-[inset_0px_2px_4px_rgb(255,255,255),0px_0px_20px_0px_rgba(0,0,0,0.5)] hover:shadow-xl overflow-hidden"
+                                >
                                     <div className="absolute inset-0 bg-linear-to-r from-purple-800 to-orange-800 rounded-full blur-md" />
                                     <span className="relative z-10">
-                                        Our Work
+                                        View Our Work
                                     </span>
                                 </Link>
                             </motion.div>
@@ -203,7 +208,8 @@ const Hero: React.FC = () => {
                                 initial="hidden"
                                 animate="visible"
                                 custom={0.8}
-                                className="flex justify-center items-center w-full md:w-1/2 md:h-full h-50 overflow-hidden">
+                                className="flex justify-center items-center w-full md:w-1/2 md:h-full h-50 overflow-hidden"
+                            >
                                 <SplineScene sceneUrl="https://prod.spline.design/b36TzwYWSAg9jcFf/scene.splinecode" />
                             </motion.div>
                         )}

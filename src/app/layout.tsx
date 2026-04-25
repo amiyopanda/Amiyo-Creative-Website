@@ -5,12 +5,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "AMIYO CREATIVE | Search AMIYO",
-    description: "Welcome to AMIYO CREATIVE. Search AMIYO for the best creative services, innovative solutions, and professional digital experiences.",
-    keywords: ["AMIYO CREATIVE", "Search AMIYO", "Creative Agency", "Digital Services", "Portfolio", "Web Design", "Branding"],
+    title: "Amiyo Creative | Full-Service Creative Production Studio",
+    description:
+        "Welcome to AMIYO CREATIVE. Search AMIYO for the best creative services, innovative solutions, and professional digital experiences.",
+    keywords: [
+        "AMIYO CREATIVE",
+        "Search AMIYO",
+        "Creative Agency",
+        "Digital Services",
+        "Portfolio",
+        "Web Design",
+        "Branding",
+    ],
     openGraph: {
-        title: "AMIYO CREATIVE | Search AMIYO",
-        description: "Welcome to AMIYO CREATIVE. Search AMIYO for the best creative services.",
+        title: "Amiyo Creative | Full-Service Creative Production Studio",
+        description:
+            "Welcome to AMIYO CREATIVE. Search AMIYO for the best creative services.",
         type: "website",
         locale: "en_US",
         siteName: "AMIYO CREATIVE",
@@ -25,8 +35,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "AMIYO CREATIVE | Search AMIYO",
-        description: "Welcome to AMIYO CREATIVE. Search AMIYO for the best creative services.",
+        title: "Amiyo Creative | Full-Service Creative Production Studio",
+        description:
+            "Welcome to AMIYO CREATIVE. Search AMIYO for the best creative services.",
         images: ["/logo.png"],
     },
     icons: {

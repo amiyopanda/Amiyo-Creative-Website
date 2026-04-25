@@ -18,29 +18,32 @@ export default function PricingCTA() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
-                className="max-w-4xl mx-auto space-y-8 z-10">
+                className="max-w-4xl mx-auto space-y-8 z-10"
+            >
                 <div className="space-y-4">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-                        <span className="block text-foreground mb-2">
-                            Looking for something specific?
-                        </span>
+                        {/* <span className="block text-foreground mb-2">
+                        </span> */}
                         <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-purple-500 to-pink-500">
-                            Or need a custom combination?
+                            Need something specific?
                         </span>
                     </h2>
 
                     <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
-                        Reach out to us — we&apos;ll create a bespoke solution
-                        designed exclusively for your brand.
+                        We&apos;ll build a scope around your project, not a
+                        package. Reach out — we&apos;ll send a formal quote
+                        within 24 hours.
                     </p>
                 </div>
 
                 <motion.div
                     whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}>
+                    whileTap={{ scale: 0.95 }}
+                >
                     <Link
                         href="/contact"
-                        className="group cursor-target cursor-none relative inline-flex items-center gap-3 px-8 py-4 bg-foreground text-background rounded-full font-semibold text-lg hover:bg-foreground/90 transition-all shadow-lg hover:shadow-xl">
+                        className="group cursor-target cursor-none relative inline-flex items-center gap-3 px-8 py-4 bg-foreground text-background rounded-full font-semibold text-lg hover:bg-foreground/90 transition-all shadow-lg hover:shadow-xl"
+                    >
                         Get a Custom Quote
                         <FaArrowRight className="size-5 group-hover:translate-x-1 transition-transform" />
                     </Link>

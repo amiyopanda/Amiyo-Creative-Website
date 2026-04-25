@@ -19,8 +19,8 @@ import { FaBoltLightning } from "react-icons/fa6";
 const AgencyValues = [
     {
         icon: FaHandSparkles,
-        title: "Creativity",
-        description: "Fresh ideas tailored to your brand.",
+        title: "Craft",
+        description: "Every deliverable is considered, not just completed.",
         decoration: (
             <>
                 <div className="absolute top-4 left-4 w-8 h-8 border-2 border-purple-400 rounded-full" />
@@ -31,9 +31,8 @@ const AgencyValues = [
     },
     {
         icon: FaAward,
-        title: "Professionalism",
-        description:
-            "Clear communication, structured workflow, and deadline-focused execution.",
+        title: "Reliability",
+        description: "Clear timelines, structured handoffs, no surprises.",
         decoration: (
             <>
                 <div className="absolute inset-4 border border-blue-400 rounded-xl"></div>
@@ -43,8 +42,8 @@ const AgencyValues = [
     },
     {
         icon: FaEye,
-        title: "Quality",
-        description: "High-standard output across every service category.",
+        title: "Standard",
+        description: "We don't send work we wouldn't put our name on.",
         decoration: (
             <div className="grid grid-cols-6 gap-1 p-4 h-full">
                 {Array.from({ length: 6 }).map((_, i) => (
@@ -59,9 +58,9 @@ const AgencyValues = [
     },
     {
         icon: FaBoltLightning,
-        title: "Client Focus",
+        title: "Direction",
         description:
-            "Work is customised around your goals and brand direction.",
+            "Your goals define the brief. Your brand shapes the output.",
     },
 ];
 
@@ -78,7 +77,8 @@ const ServiceBadge: FC<{ icon: IconType; label: string }> = ({
     label,
 }) => (
     <div
-        className={`flex items-center space-x-3 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full px-4 py-2 hover:border-purple-500/50 transition-all duration-300 hover:rotate-0`}>
+        className={`flex items-center space-x-3 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full px-4 py-2 hover:border-purple-500/50 transition-all duration-300 hover:rotate-0`}
+    >
         <Icon className="w-4 h-4 text-purple-400" />
         <span className="text-sm 3xl:text-2xl text-gray-400">{label}</span>
     </div>
@@ -121,13 +121,13 @@ const AboutPage: FC = () => {
                             </span>
                         </h1>
                         <p className="text-base lg:text-xl 3xl:text-3xl text-gray-400 leading-relaxed max-w-2xl 3xl:max-w-6xl">
-                            Amiyo Creative is a full-scale creative and
-                            production company offering complete visual,
-                            digital, and branding solutions. We deliver every
-                            service category — photo, video, editing, design,
-                            CGI, VFX, and web — with 24/7 operational support.
-                            We are the one-stop partner for brands that want
-                            reliability, speed, and premium quality
+                            Amiyo Creative is a full-service creative production
+                            studio. We handle video editing, graphic design,
+                            photography, videography, CGI, VFX, and web
+                            development — under one roof, with one team, and
+                            24/7 operational capacity. Built for brands that
+                            need quality without the overhead of managing
+                            multiple vendors.
                         </p>
                     </div>
 
@@ -185,9 +185,9 @@ const AboutPage: FC = () => {
             <section className="py-12 sm:py-20 mx-auto px-6 sm:px-10 3xl:px-30 text-center max-w-4xl">
                 <SectionHeading title="Our Vision" />
                 <p className="text-gray-400 text-base lg:text-xl 3xl:text-3xl leading-relaxed">
-                    To become the most reliable and complete creative partner
-                    for brands worldwide — delivering everything from content to
-                    websites to CGI in one place.
+                    To be the most complete creative production partner for
+                    brands worldwide — one studio that handles everything, so
+                    our clients never have to coordinate between vendors again.
                 </p>
             </section>
 
@@ -224,14 +224,15 @@ const AboutPage: FC = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="px-6 py-4 grid grid-cols-3 gap-4">
+                            <div className="px-6 py-4 grid grid-cols-2 gap-4">
                                 {[
-                                    { label: "Years", value: "10+" },
-                                    { label: "Projects", value: "987+" },
-                                    { label: "Clients", value: "130+" },
+                                    { label: "Years Experience", value: "10+" },
+                                    {
+                                        label: "Projects Delivered",
+                                        value: "987+",
+                                    },
+                                    { label: "Brands Served", value: "130+" },
                                     { label: "Operations", value: "24/7" },
-                                    { label: "Countries", value: "Global" },
-                                    { label: "Ideas", value: "∞" },
                                 ].map((stat, i) => (
                                     <div key={i} className="text-center">
                                         <div className="text-2xl 3xl:text-4xl font-bold text-white mb-1">
@@ -256,12 +257,11 @@ const AboutPage: FC = () => {
                         <SectionHeading title="Founder's Note" />
                         <div className="space-y-6 text-gray-400 3xl:text-2xl leading-relaxed">
                             <p>
-                                Amiyo Creative was built with one mission — to
-                                give brands a place where every creative and
-                                digital need is solved with quality, clarity,
-                                and speed. From photography and video to
-                                editing, branding, CGI, and websites — our team
-                                operates 24/7 to deliver world-class results
+                                Amiyo Creative was built with one goal — to give
+                                brands a single, dependable place for every
+                                creative need. Not a directory of freelancers.
+                                Not a referral chain. One studio, full
+                                capability, operating around the clock.
                             </p>
                             <p>
                                 From humble beginnings to premium projects
@@ -291,24 +291,24 @@ const AboutPage: FC = () => {
                     {[
                         {
                             num: "1",
-                            title: "Requirement Discussion",
-                            desc: "We understand your goals, style, timeline, and deliverables — available 24/7 for communication.",
+                            title: "Brief & Alignment",
+                            desc: "We understand your goals, brand direction, timeline, and expected outcomes — before a single file is opened.",
                             color: "text-purple-400",
                             border: "border-purple-500/20",
                             bg: "bg-purple-500/5",
                         },
                         {
                             num: "2",
-                            title: "Creative & Technical Execution",
-                            desc: "Our team handles the full workflow of photography, editing, design, CGI, or development.",
+                            title: "Production & Execution",
+                            desc: "Our team handles the full pipeline — editing, design, CGI, or development — with structured updates throughout.",
                             color: "text-blue-400",
                             border: "border-blue-500/20",
                             bg: "bg-blue-500/5",
                         },
                         {
                             num: "3",
-                            title: "On-Time Delivery",
-                            desc: "Fast turnaround with consistent quality.",
+                            title: "Delivery & Handoff",
+                            desc: "Clean files, agreed timeline, clear handoff. No chasing. No ambiguity.",
                             color: "text-green-400",
                             border: "border-green-500/20",
                             bg: "bg-green-500/5",
@@ -316,9 +316,11 @@ const AboutPage: FC = () => {
                     ].map((step, i) => (
                         <div
                             key={i}
-                            className={`group relative p-8 rounded-3xl backdrop-blur-sm border ${step.border} ${step.bg} hover:border-opacity-50 transition-all duration-300 hover:-translate-y-2`}>
+                            className={`group relative p-8 rounded-3xl backdrop-blur-sm border ${step.border} ${step.bg} hover:border-opacity-50 transition-all duration-300 hover:-translate-y-2`}
+                        >
                             <div
-                                className={`text-6xl font-black ${step.color} opacity-20 absolute top-4 right-6 pointer-events-none select-none group-hover:opacity-30 transition-opacity`}>
+                                className={`text-6xl font-black ${step.color} opacity-20 absolute top-4 right-6 pointer-events-none select-none group-hover:opacity-30 transition-opacity`}
+                            >
                                 {step.num}
                             </div>
                             <h3 className="text-xl 3xl:text-3xl font-bold text-white mb-4 relative z-10">

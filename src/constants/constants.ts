@@ -54,16 +54,16 @@ export const hexToRgb = (hex: string): [number, number, number] => {
     const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
     return m
         ? [
-            parseInt(m[1], 16) / 255,
-            parseInt(m[2], 16) / 255,
-            parseInt(m[3], 16) / 255,
-        ]
+              parseInt(m[1], 16) / 255,
+              parseInt(m[2], 16) / 255,
+              parseInt(m[3], 16) / 255,
+          ]
         : [1, 1, 1];
 };
 
 export async function parseAPIResponse<T>(
     res: Response,
-    fallbackMessage: string
+    fallbackMessage: string,
 ): Promise<T> {
     const text = await res.text();
     let json: unknown;
@@ -608,7 +608,7 @@ export const FAQs: { q: string; a: string }[] = [
     },
     {
         q: "Do you work outside Kolkata?",
-        a: "Absolutely. We provide services across India and internationally.",
+        a: "Yes. We work with clients across India and internationally. For location-dependent services like videography and photography, we assess travel on a per-project basis. Editing, design, CGI, and web are delivered fully remote.",
     },
     {
         q: "Do you collaborate with influencers?",
@@ -628,11 +628,11 @@ export const FAQs: { q: string; a: string }[] = [
     },
     {
         q: "What makes Amiyo Creative different from others?",
-        a: "Our all-in-one approach. Instead of hiring separate teams for film, design, web, and marketing — we provide it all under one roof, ensuring consistency and quality.",
+        a: "One studio handles everything — production, editing, design, CGI, and web. One team, one creative direction, one point of accountability. No fragmentation. No repeated briefings. No consistency gaps.",
     },
     {
         q: "Do you offer long-term partnerships?",
-        a: "Yes, we work on both one-time projects and long-term retainers with brands, agencies, and influencers.",
+        a: "Yes. We work on one-time projects and ongoing monthly retainers. Most of our long-term clients started with a single project.",
     },
 ];
 

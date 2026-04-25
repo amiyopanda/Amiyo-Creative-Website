@@ -1,11 +1,11 @@
 import { PricingDataProps } from "./types";
 
 export const PRICING_HERO = {
-    title: "Transparent & Flexible Pricing",
+    title: "Clear Pricing. No Surprises.",
     subtitle:
-        "Professional creative services tailored to your budget. Choose a package or build your own custom solution.",
+        "Choose a package built for your current stage — or define a custom scope that fits exactly what you need.",
     description:
-        "From video editing to full-scale brand domination, we offer clear pricing with no hidden costs. Scale your content production with Amiyo Creative.",
+        "Every package is priced with full transparency. No hidden costs, no scope creep, no last-minute additions — just a clear creative partnership from first brief to final delivery.",
 };
 
 export const SERVICES_PRICING = [
@@ -149,7 +149,8 @@ export const PRICING_PACKAGES: PricingDataProps[] = [
     {
         title: "Basic Creator Kit",
         price: "₹14,999",
-        tagline: "Small creators, small businesses, beginners.",
+        tagline:
+            "Creators and small businesses starting to build a consistent presence.",
         features: [
             "4 Social Media Video Edits (Reels/Shorts)",
             "4 Social Media Creatives",
@@ -167,7 +168,7 @@ export const PRICING_PACKAGES: PricingDataProps[] = [
     {
         title: "Growth Content Kit",
         price: "₹34,999",
-        tagline: "Growing creators, startups, local brands.",
+        tagline: "Growing brands and startups scaling content output.",
         features: [
             "8 Reels (Advanced Editing)",
             "8 Social Media Creatives",
@@ -186,7 +187,7 @@ export const PRICING_PACKAGES: PricingDataProps[] = [
     {
         title: "Business Content Suite",
         price: "₹74,999",
-        tagline: "Businesses, premium creators, agencies.",
+        tagline: "Established businesses with regular content requirements.",
         features: [
             "12 Reels (Advanced + Trend MG)",
             "12 Graphic Designs",
@@ -206,7 +207,8 @@ export const PRICING_PACKAGES: PricingDataProps[] = [
     {
         title: "Brand Premium Pro Kit",
         price: "₹1,49,999",
-        tagline: "Premium brands, high-growth businesses, influencers.",
+        tagline:
+            "High-growth brands and serious personal brands investing in premium output.",
         features: [
             "20 Reels (Cinematic + Trend Mix)",
             "20 Social Media Graphics",
@@ -225,9 +227,10 @@ export const PRICING_PACKAGES: PricingDataProps[] = [
         hoverGlow: "hover:shadow-[0_20px_35px_-8px_rgba(236,72,153,0.4)]",
     },
     {
-        title: "Full Brand Domination",
+        title: "Full Brand Production",
         price: "₹2,99,999",
-        tagline: "High-end brands, companies, agencies.",
+        tagline:
+            "Agencies, large brands, and companies requiring full-scale monthly production.",
         features: [
             "30 High-End Reels",
             "30 Graphic Designs",
@@ -250,7 +253,8 @@ export const DELIVERY_OPTIONS = [
     {
         title: "Standard Delivery",
         cost: "Included",
-        description: "Standard timelines based on service type.",
+        description:
+            "Default timelines per service type. Full quality. Included in every package.",
         features: ["Standard Workflow", "Regular Updates"],
     },
     {
@@ -281,9 +285,9 @@ export const POLICIES = {
     revision: {
         title: "Revision Policy",
         details: [
-            "1 free revision included (minor changes only)",
-            "Additional revision: ₹999 – ₹4,999 per round",
-            "New requirements = new cost (script changes, new footage, etc.)",
+            "Each project includes one structured revision round (minor adjustments)",
+            "Additional revisions are quoted at ₹999–₹4,999 per round",
+            "Changes to scope — new footage, script rewrites, added requirements — are treated as a new brief and quoted separately.",
         ],
     },
     cancellation: {
